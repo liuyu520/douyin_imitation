@@ -9,7 +9,10 @@
       </template>
     </BaseHeader>
     <div class="content">
-      <iframe src="https://kf.qq.com/touch/product/wechat_app.html" />
+      <!-- 帮助页面内容占位 -->
+      <div class="help-placeholder">
+        <p>帮助与反馈功能开发中...</p>
+      </div>
     </div>
   </div>
 </template>
@@ -36,12 +39,12 @@ defineOptions({
     margin-top: 60rem;
     height: calc(var(--vh, 1vh) * 100 - 60rem);
 
-    iframe {
-      padding: 0;
-      margin: 0;
-      border: none;
-      width: 100%;
+    .help-placeholder {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 100%;
+      color: #999;
     }
   }
 }
